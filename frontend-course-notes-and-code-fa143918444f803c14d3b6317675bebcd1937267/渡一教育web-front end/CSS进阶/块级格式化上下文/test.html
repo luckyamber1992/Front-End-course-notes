@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 利用绝对定位解决高度坍塌的问题 */
+        .container{
+            background-color: aqua;
+            /* position: absolute; */
+            /* float:left; */
+            /* 推荐👇 */
+            overflow:hidden;
+        }
+        .container .item{
+            width:500px;
+            height:500px;
+            background-color: bisque;
+            border:1px black solid;
+            float:left;
+            margin:10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

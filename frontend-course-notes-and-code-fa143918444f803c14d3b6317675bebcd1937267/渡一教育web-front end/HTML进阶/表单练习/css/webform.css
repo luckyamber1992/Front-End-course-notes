@@ -1,0 +1,169 @@
+.clearfix::after{
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.Form-outline{
+    background-image: url('https://static.hdslb.com/passport/img/mini-login/banner.jpg');
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow:0 0 6px rgba(0, 0, 0, 0.1);
+    padding:25px 45px 40px;
+    width:422px;
+    height:456px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+.tag .left,
+.tag .right{  
+    float:left;
+    width:63px;
+    text-align:center;
+    height:30px;
+    border-bottom: 5px solid #eee;
+    font-size: 18px;
+}
+
+.Form-outline .form-area{
+    line-height:20px;
+    font-size: 20px;
+}
+.Form-outline .form-area .form-item{
+    margin-top:18px;
+}
+.Form-outline .form-area .form-item input::placeholder{
+    text-align: left;
+    }
+
+input{
+    height:36px;
+    background: #edf2f9;
+    box-sizing: border-box;
+    border:1px solid #c6d8f2;
+}
+.Form-outline .form-area .log-regis{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.log-regis .tag .left:active, 
+.log-regis .tag .right:active{
+    border-color:#00a1d6;
+    color:#00a1d6;
+}
+.form-item .select,
+.form-item .input{
+    float:left;
+}
+.select .title{
+    width:116px;
+    height:36px; 
+    font-size: 12px; 
+    border:1px solid #c6d8f2;
+    text-align: center;
+    line-height:36px ;
+    background-color: #edf2f9;
+}
+.form-item .input input{
+    width:199px;
+}
+
+.select .options ul{
+    font-size: 12px;
+    width:116px;
+    max-height: 150px;
+    overflow:hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.Form-outline .form-area .form-item .select{
+    margin-right:12px;
+}
+.Form-outline .form-area .form-item .num,
+.Form-outline .form-area .form-item .getpass{
+    float:left;
+    height:36px;
+}
+.Form-outline .form-area .form-item .getpass{
+    margin-left: 13px;
+    background:#00a1d6;
+    width:115px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height:36px;
+    text-align:center;
+    line-height: 36px;
+    
+}
+.Form-outline .form-area .form-item .getpass button{
+    color:#fff;
+    background:#00a1d6;
+    cursor:pointer;
+}
+.form-item .nikname input, 
+.form-item .passwd input{
+    width: 327px;
+    
+}
+.regis button{
+    width:327px;
+    height:36px;
+}
+
+.confirm{
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+.confirm input{
+    float:left;
+    margin-top:8px;
+}
+
+.confirm .agreement{
+    font-size: 12px;
+}
+
+.confirm .agreement a{
+    color:#00a1d6;
+}
+.confirm .agreement a:hover
+{color:#F35C8F;
+cursor:pointer;}
+.confirm input{
+display:inline-block;
+height:unset}
+
+.regis button{
+    background-color: #ccc;
+    color:#fff;
+    border-radius: 4px;
+}
+.Form-outline .close{
+    background-image: url('./icons.png');
+    background-position: -32px -2px;
+    border-radius: 3px;
+    cursor:pointer;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:30px;
+    height:30px;
+}
+.Form-outline .close:hover{
+    background-color: #00a1d6;
+}
+input[type='text']:focus,input[type='password']:focus{
+    border:1px solid #00a1d6;
+}
+.confirm input:checked~ button{
+    background-color:#00a1d6;
+}

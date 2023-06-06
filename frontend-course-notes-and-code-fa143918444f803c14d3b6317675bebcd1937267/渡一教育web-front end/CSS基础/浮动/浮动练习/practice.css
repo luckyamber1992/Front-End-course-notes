@@ -1,0 +1,103 @@
+.body{
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color:#333;
+}
+.clearfix{
+    display:block;
+    clear:both;
+    content:"";
+}
+.main{
+    line-height:1.5em;
+}
+.main .nav
+{   background-color:#47464a;
+    height:60px;
+    width:100%;
+    text-align:center;
+    line-height:60px;
+    font-size:16px;
+    color:#999;}
+.main .nav a{
+    /* 行盒的margin水平方向有效 */
+    display:inline-block;
+    margin:0 38px;
+}
+.main .nav a:hover{
+    color:#fff;}
+.main .nav a.select{
+    color:red;}
+.main .container{
+    display:block;
+    width:1120px;
+    margin:0 auto;
+}
+.main .container .choose-area{
+   border: 1px solid #e5e5e5;
+   margin-top:40px;
+   line-height:30px;
+   padding:0 30px;
+}
+.main .container .choose-area .left{
+    float: left;
+    color: #999;
+    font-size: 14px;
+}
+.main .container .choose-area .choose-item .right{
+  float:left;
+  width:1000px;
+}
+.main .container .choose-area .choose-item{
+    border-bottom:1px dotted  #7d242421;
+    margin:1em 0;
+}
+/* .main .container .choose-area .choose-item .no-line{
+    border:none;} 需要复习一下层叠的内容*/
+.main .container .choose-area .right li{
+    float:left;
+    margin:0 9px;
+    padding:0 8px;    
+}
+.main .container .choose-area .right li:hover{color:#ef4238;}
+
+.main .container .choose-area .right{width:1030px;}
+/* 解决高度坍塌 */
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.main .container .choose-area li.selected{
+    border-radius: 15px;
+    background-color: red;
+    color:#fff;
+}
+.main .container .movies .movie-item{
+    float:left;
+    margin-right:32px;
+    width:160px;
+    margin-top:20px;
+}
+
+.main .container .movies .movie-item .img a img{
+    width:100%;
+}
+.main .container .movies .movie-item:nth-child(6n){margin-right:0;}
+.main .container .movies .movie-item .name{
+white-space: nowrap;
+overflow:hidden;
+text-overflow: ellipsis;
+padding:0 4px;
+text-align:center;
+}
+.main .container .movies .movie-item .score{
+    font-size:22px; 
+    font-style: italic;
+    color:#ffb400;
+    text-align: center;
+}
+.main .container .movies .movie-item .score::first-letter{font-size:30px;}
+.main .container .footer ul li{display:inline-block;border:1px solid #d8d8d8; padding:0 12px; margin:0 4px;}
+.main .container .footer li:hover{border-color:#ef4238;}
+.main .container .footer{text-align: center; margin:2em 0;}

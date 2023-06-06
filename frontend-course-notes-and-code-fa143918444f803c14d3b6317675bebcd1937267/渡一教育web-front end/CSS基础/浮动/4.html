@@ -1,0 +1,37 @@
+<!-- 本网页展示常规流会无视浮动盒按照自己的规则排列 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            width:50px;
+            height:50px;
+            border:2px solid black;
+            background-color: blueviolet;
+            float:right;
+            font-size: 1em;
+        }
+        .origin{
+            font-size: 1em;
+            color:black;
+            width:950px;
+            height:50px;
+            border:1px red solid;
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 下面代码展示了常规流放在末尾时，他会忽视float，按照自己的块盒原则独占一行 -->
+        <div class="b">1</div>
+        <div class="b">2</div>
+        <div class="b">3</div>
+        <div class="b">4</div>
+        <div class="origin">5</div>>
+</body>
+</html>
