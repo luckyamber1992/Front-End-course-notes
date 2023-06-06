@@ -9,3 +9,8 @@ git工作机制：
 ## git revert and git reset
 如果被重置的提交只存在于本地，使用reset。但，此命令会更改提交历史记录，并且可能会覆盖远程团队成员所依赖的历史记录。
 revert 是创建一个新的提交来撤消更改，因此如果要恢复的提交已经被推送到共享仓库，最好使用 revert，因为它不会覆盖提交历史。
+## git merge/rebase
+- git merge --squash feature
+git rebase
+git log nav(another branch name) -- oneline(this makes the code more readable)
+git cherry-pick hashNumber(commit Id)
