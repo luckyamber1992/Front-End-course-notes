@@ -14,3 +14,7 @@ revert 是创建一个新的提交来撤消更改，因此如果要恢复的提�
 git rebase
 git log nav(another branch name) -- oneline(this makes the code more readable)
 git cherry-pick hashNumber(commit Id)
+
+## git拉取特定github分支
+在clone时就加上-b branch_name的操作，就可以指定分支进行拉取：
+> git clone -b dev-md https://gitee.com/mindspore/mindscience.git
